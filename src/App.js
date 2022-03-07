@@ -15,7 +15,7 @@ function App() {
        const newData = data.filter((emoji)=> emoji.title.toLowerCase().includes(search.toLowerCase()));
        setnData(newData);
   }
-  ,[search]);
+  ,[search,data,setnData]);
 
   useEffect(()=>{
     console.log("secondUseEffect")
